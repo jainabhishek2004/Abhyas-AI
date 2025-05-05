@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 import { getAuth } from "@clerk/nextjs/server";
+import { log } from "console";
 
 // GET: Get topic by ID or list all topics for the user
 export async function GET(req: NextRequest) {
@@ -55,6 +56,7 @@ export async function POST(req: NextRequest) {
   if (!userId) {
     return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
   }
+  console.log("userId", userId);
 
   const body = await req.json();
   const { title } = body;
@@ -64,6 +66,7 @@ export async function POST(req: NextRequest) {
   }
 
   try {
+
     const topic = await prisma.topic.create({
       data: {
         userId,
