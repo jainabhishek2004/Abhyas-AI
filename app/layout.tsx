@@ -12,8 +12,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Smriti AI",
-  description: "Smriti AI - Remember Smarter",
+  title: "Abhyaas AI",
+  description: "Abhyaas AI - Remember Smarter",
 };
 
 export default function RootLayout({

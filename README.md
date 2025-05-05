@@ -1,12 +1,12 @@
-# 📚 Smriti AI – Your Smart Learning Companion
+# 📚 Abhyaas AI – Your Smart Learning Companion
 
-Smriti AI is an intelligent, all-in-one learning assistant that helps you **organize**, **understand**, and **retain** everything you study 🧠. Whether you're a student, a self-learner, or a professional, Smriti AI transforms passive content into active learning tools.
+Abhyaas AI is an intelligent, all-in-one learning assistant that helps you **organize**, **understand**, and **retain** everything you study 🧠. Whether you're a student, a self-learner, or a professional, Abhyaas AI transforms passive content into active learning tools.
 
 ---
 
-## ✨ Why Smriti AI?
+## ✨ Why Abhyaas AI?
 
-In today's world of scattered PDFs, YouTube videos, and online tutorials — **Smriti AI brings it all together.**
+In today's world of scattered PDFs, YouTube videos, and online tutorials — **Abhyaas AI brings it all together.**
 
 🚀 **Capture** resources from YouTube, PDFs, and links  
 🧠 **Convert** them into summaries, mind maps, and personalized quizzes  
@@ -21,7 +21,7 @@ In today's world of scattered PDFs, YouTube videos, and online tutorials — **S
 Organize your learning by creating topic-wise folders. Store PDFs, videos, and links all in one place.
 
 🪄 **Smart Content Processing**  
-Smriti breaks down your content into:
+Abhyaas breaks down your content into:
 - 📄 AI-generated summaries  
 - 🧭 Mind maps for visual learners  
 - ❓ Interactive quizzes to boost recall
@@ -69,8 +69,8 @@ Use it on web, and soon — on WhatsApp & mobile apps too!
 ## 🚀 Getting Started (Developer Mode)
 
 ```bash
-git clone https://github.com/your-username/smriti-ai.git
-cd smriti-ai
+git clone https://github.com/your-username/Abhyaas-ai.git
+cd Abhyaas-ai
 npm install
 npm run dev
 

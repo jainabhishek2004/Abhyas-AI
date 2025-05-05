@@ -35,7 +35,7 @@ const pricingPlans = [
     highlight: true,
   },
   {
-    title: "SmritiX",
+    title: "AbhyaasX",
     price: "$29/mo",
     description:
       "Built for teams, coaching institutes & educators to manage multiple learners.",
@@ -64,7 +64,7 @@ export const Pricing: React.FC<PricingProps> = ({ colorFilter, filterStyles }) =
         </h2>
         <p className="text-gray-400 text-lg">
           Choose the plan that fits your learning style and boost your retention
-          with Smriti AI.
+          with Abhyaas AI.
         </p>
       </div>
 

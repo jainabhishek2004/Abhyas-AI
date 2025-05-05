@@ -12,7 +12,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/dashboard" className="flex items-center">
               <Brain className="me-[5px] h-5 w-5 text-primary" />
-              <span className="text-xl font-bold">Smriti AI</span>
+              <span className="text-xl font-bold">Abhyaas AI</span>
             </Link>
           </div>
 

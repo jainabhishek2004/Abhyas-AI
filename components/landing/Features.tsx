@@ -23,7 +23,7 @@ const features = [
   {
     icon: FileQuestion,
     title: "Auto Quiz Creation",
-    desc: "Smriti AI generates personalized MCQs and revision questions from your notes.",
+    desc: "Abhyaas AI generates personalized MCQs and revision questions from your notes.",
   },
   {
     icon: AlarmClock,
@@ -55,7 +55,7 @@ const Features: React.FC<FeaturesProps> = ({ filterStyle }) => {
           Features <span className="text-primary">That Stick</span>
         </h2>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-14">
-          Smriti AI makes remembering effortless, fun, and intelligent—built to
+          Abhyaas AI makes remembering effortless, fun, and intelligent—built to
           serve modern learners.
         </p>
 

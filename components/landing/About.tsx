@@ -16,13 +16,13 @@ const About: React.FC<AboutProps> = ({ colorFilter, filterStyles }) => {
       <div className="max-w-4xl text-center space-y-10 relative z-[1]">
         <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
           Forget Fast? <br />
-          <span className="text-lime-400">Remember Faster with Smriti AI.</span>
+          <span className="text-lime-400">Remember Faster with Abhyaas AI.</span>
         </h2>
 
         <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
           Learning is easy, but retention is rare. Whether it's a lecture, PDF,
           or tutorial— we forget most of it within days. That’s why we built
-          Smriti AI: a tool that turns passive learning into active remembering.
+          Abhyaas AI: a tool that turns passive learning into active remembering.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 mt-10">
@@ -40,7 +40,7 @@ const About: React.FC<AboutProps> = ({ colorFilter, filterStyles }) => {
               <Zap className="text-primary" /> From Content to Clarity
             </h3>
             <p className="text-gray-400">
-              Upload notes or videos, and Smriti AI turns them into mindmaps and
+              Upload notes or videos, and Abhyaas AI turns them into mindmaps and
               quiz cards.
             </p>
           </div>
