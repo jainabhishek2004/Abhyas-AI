@@ -9,6 +9,11 @@ import {
   MessageCircle,
 } from "lucide-react";
 
+// Accept filter style from parent
+interface FeaturesProps {
+  filterStyle?: string;
+}
+
 const features = [
   {
     icon: BrainCircuit,
@@ -42,9 +47,9 @@ const features = [
   },
 ];
 
-const Features = () => {
+const Features: React.FC<FeaturesProps> = ({ filterStyle }) => {
   return (
-    <section className="text-white px-6 py-24 relative">
+    <section style={{ filter: filterStyle }} className="text-white px-6 py-24 relative">
       <div className="max-w-6xl mx-auto text-center relative z-[1]">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
           Features <span className="text-primary">That Stick</span>

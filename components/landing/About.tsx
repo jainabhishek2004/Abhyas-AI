@@ -1,9 +1,18 @@
 "use client";
 import { Brain, Zap } from "lucide-react";
 
-const About = () => {
+// Props Interface
+interface AboutProps {
+  colorFilter: string;
+  filterStyles: Record<string, string>;
+}
+
+const About: React.FC<AboutProps> = ({ colorFilter, filterStyles }) => {
   return (
-    <section className="text-white flex flex-col justify-center items-center px-6 py-24 relative">
+    <section
+      className="text-white flex flex-col justify-center items-center px-6 py-24 relative"
+      style={{ filter: filterStyles[colorFilter] }}
+    >
       <div className="max-w-4xl text-center space-y-10 relative z-[1]">
         <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
           Forget Fast? <br />
@@ -37,6 +46,7 @@ const About = () => {
           </div>
         </div>
       </div>
+
       <div className="absolute bottom-5 left-1/2 w-[180px] h-[180px] bg-primary opacity-100 blur-[200px] transform -translate-x-1/2 -translate-y-1/2"></div>
     </section>
   );

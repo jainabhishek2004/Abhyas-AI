@@ -1,5 +1,11 @@
 import { Check } from "lucide-react";
 
+// 👇 Add the colorFilter prop to the Pricing component
+interface PricingProps {
+  colorFilter: string;
+  filterStyles: Record<string, string>;
+}
+
 const pricingPlans = [
   {
     title: "Starter",
@@ -44,13 +50,13 @@ const pricingPlans = [
   },
 ];
 
-export const Pricing = () => {
+export const Pricing: React.FC<PricingProps> = ({ colorFilter, filterStyles }) => {
   return (
     <section
       id="pricing"
       className="w-full text-white px-6 md:px-20 py-24 relative"
     >
-      <div className="text-center mb-16">
+      <div className="text-center mb-16" style={{ filter: filterStyles[colorFilter] }} >
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight pb-1">
           Simple,
           <span className="text-primary"> Transparent </span>
@@ -62,15 +68,15 @@ export const Pricing = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto relative z-[1]">
+      {/* Apply color filter only to the pricing plans */}
+      <div
+        className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto relative z-[1]"
+        style={{ filter: filterStyles[colorFilter] }}  // Apply filter to the pricing plans here
+      >
         {pricingPlans.map((plan) => (
           <div
             key={plan.title}
-            className={`rounded-xl px-8 py-10 shadow-lg backdrop-blur-md transition bg-white/5 hover:scale-[1.02] ${
-              plan.highlight
-                ? "border border-primary/70"
-                : "text-white border border-white/10"
-            }`}
+            className={`rounded-xl px-8 py-10 shadow-lg backdrop-blur-md transition bg-white/5 hover:scale-[1.02] ${plan.highlight ? "border border-primary/70" : "text-white border border-white/10"}`}
           >
             <h3 className="text-2xl font-extrabold mb-2 text-primary">
               {plan.title}
@@ -101,3 +107,4 @@ export const Pricing = () => {
     </section>
   );
 };
+
